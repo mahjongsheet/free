@@ -2,15 +2,31 @@
 <html>
   <head>
     <base target="_top">
+    <style>
+    .my-parts {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* = height ÷ width × 100 */
+    }
+    .my-parts iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }      
+    </style>
   </head>
   <body>
-
-     <div class="w-75 mx-auto" style="max-width: 800px;">
+    <div class="my-parts">
+      <iframe width="560" height="315" src="https://script.google.com/macros/s/AKfycbyCzj6fBisjSolbMjFPUg8Gq8SjhLQQruCOMatM5y-9_MIgmLB6HVV_36z7-4emXMrS/exec" frameborder="0"></iframe>
+    </div>
+    <!-- <div class="w-75 mx-auto" style="max-width: 800px;">
       <div>
         <iframe width="560" height="315" src="https://script.google.com/macros/s/AKfycbyCzj6fBisjSolbMjFPUg8Gq8SjhLQQruCOMatM5y-9_MIgmLB6HVV_36z7-4emXMrS/exec"
         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
         </iframe>
       </div>
-    </div>
+    </div>-->
   </body>
 </html>
